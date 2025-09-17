@@ -270,7 +270,7 @@
     "Blue Component" : 0.3333333432674408,
     "Red Component" : 0.3333333432674408
   },
-  "Animate Movement" : true,
+  "Animate Movement" : false,
   "Non-ASCII Anti Aliased" : true,
   "Ansi 10 Color" : {
     "Red Component" : 0.3450070321559906,
@@ -420,6 +420,7 @@
     "Alpha Component" : 0.25,
     "Green Component" : 0.77217715978622437
   },
+  "Title Components" : 2,
   "Custom Directory" : "No",
   "Working Directory" : "\/Users\/levvij",
   "ASCII Anti Aliased" : true,
@@ -460,7 +461,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.7607843279838562
   },
-  "Normal Font" : "IBMPlexMono 12",
+  "Normal Font" : "BlexMonoNFM 12",
   "Unlimited Scrollback" : true,
   "Ansi 12 Color (Light)" : {
     "Green Component" : 0.3333333432674408,
@@ -509,24 +510,6 @@
   "Status Bar Layout" : {
     "components" : [
       {
-        "class" : "iTermStatusBarGitComponent",
-        "configuration" : {
-          "knobs" : {
-            "iTermStatusBarGitComponentPollingIntervalKey" : 2,
-            "base: priority" : 5,
-            "base: compression resistance" : 1,
-            "minwidth" : 0,
-            "maxwidth" : 1.7976931348623157e+308
-          },
-          "layout advanced configuration dictionary value" : {
-            "remove empty components" : true,
-            "font" : ".AppleSystemUIFont 12",
-            "algorithm" : 1,
-            "auto-rainbow style" : 0
-          }
-        }
-      },
-      {
         "class" : "iTermStatusBarWorkingDirectoryComponent",
         "configuration" : {
           "knobs" : {
@@ -562,24 +545,26 @@
         }
       },
       {
-        "class" : "iTermStatusBarNetworkUtilizationComponent",
+        "class" : "iTermStatusBarGitComponent",
         "configuration" : {
           "knobs" : {
+            "iTermStatusBarGitComponentPollingIntervalKey" : 2,
             "base: priority" : 5,
-            "base: compression resistance" : 1
+            "base: compression resistance" : 1,
+            "minwidth" : 0,
+            "maxwidth" : 1.7976931348623157e+308
           },
           "layout advanced configuration dictionary value" : {
-            "remove empty components" : true,
-            "font" : ".AppleSystemUIFont 12",
+            "auto-rainbow style" : 0,
             "algorithm" : 1,
-            "auto-rainbow style" : 0
+            "remove empty components" : false
           }
         }
       }
     ],
     "advanced configuration" : {
       "remove empty components" : true,
-      "font" : ".AppleSystemUIFont 12",
+      "font" : ".SFNS-Regular 12",
       "algorithm" : 1,
       "auto-rainbow style" : 0
     }

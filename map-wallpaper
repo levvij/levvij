@@ -9,7 +9,7 @@ cd ~
 LOCATION="$HOME/wallpaper-`date +%s`.png"
 echo $LOCATION
 
-curl townhall.acryps.com/wallpaper/pilegron/large > "$LOCATION"
+curl https://townhall.acryps.com/wallpaper/pilegron/large > "$LOCATION"
 
 echo "setting"
 osascript -e "tell application \"System Events\" to set picture of every desktop to \"$LOCATION\""
